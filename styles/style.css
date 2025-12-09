@@ -1,3 +1,6 @@
+body {
+    background-color: #FFF7F0;
+}
 .consultation-link {
     background-color: #030303;
     color: #FFF7F0;
@@ -126,15 +129,18 @@ footer {
 }
 .skills-grid .photography {
     background-color: #61C4B7;
-    grid-area: 4 / 1 / 5 / 3;
+    grid-area: 5 / 1 / 6 / 3; 
+    height: 162px;
 }
 .skills-grid .illustrations {
     background-color: #E16B5B;
-    grid-area: 5 / 1 / 6 / 3; 
+    grid-area: 4 / 1 / 5 / 3;
+    height: 162px;
 }
 .skills-grid .motion-graphics {
     background-color: #552049;
     grid-area: 6 / 1 / 7 / 3; 
+    height: 162px;
 }
 /* AMY BIO STYLING */
 .amy-bio {
@@ -285,6 +291,7 @@ footer {
     }
     .skills-grid > .illustrations {
         grid-area: 2 / 3 / 3 / 5;
+        height: 182px;
     }
     .skills-grid > .photography {
         grid-area: 3 / 1 / 4 / 3;
@@ -313,13 +320,17 @@ footer {
         grid-area: 1 / 4 / 2 / 5;
     }
     .skills-grid > .illustrations {
-        grid-area: 1 / 5 / 2 / 7;
+        grid-area: 2 / 3 / 3 / 5;
+        height: 182px;
     }
     .skills-grid > .photography {
-        grid-area: 2 / 3 / 3 / 5;
+        grid-area: 1 / 5 / 2 / 7;
+        height: 182px;
+        
     }
     .skills-grid > .motion-graphics {
         grid-area: 2 / 5 / 3 / 7;
+        height: 182px;
     }
     .amy-bio {
         display: grid;

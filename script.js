@@ -1,6 +1,6 @@
-let scrollContainer = document.querySelector(".carousel-track");
-let prevButton = document.querySelector(".prev");
-let nextButton = document.querySelector(".next");
+const scrollContainer = document.querySelector(".carousel-track");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
 
 scrollContainer.addEventListener("wheel", (e) => {
     e.preventDefault();

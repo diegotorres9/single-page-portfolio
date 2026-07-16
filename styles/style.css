@@ -244,12 +244,6 @@ footer
     align-items: center;
     justify-content: center;
     /* overflow-x: scroll; */
-    scrollbar-width: none;
-}
-
-.work-carousel::-webkit-scrollbar
-{
-    display: none;
 }
 
 .work-carousel>h3
@@ -271,6 +265,7 @@ footer
     list-style-type: none;
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
     /* width: clamp(89.375rem, 58.6092rem + 131.2676vw, 176.75rem); */
 }
 

@@ -38,27 +38,27 @@
     </section>
 
     <section role="contentinfo" class="skills-grid">
-      <div class="graphic-design">
+      <div class="graphic-design skill-container">
         <img src="./assets/pattern-graphic-design.svg" alt="">
         <p>Graphic Design</p>
       </div>
-      <div class="ui-ux">
+      <div class="ui-ux skill-container">
         <img src="./assets/pattern-ui-ux.svg" alt="">
         <p>UI/UX</p>
       </div>
-      <div class="apps">
+      <div class="apps skill-container">
         <img src="./assets/pattern-apps.svg" alt="">
         <p>Apps</p>
       </div>
-      <div class="photography">
+      <div class="photography skill-container">
         <img src="./assets/pattern-photography.svg" alt="">
         <p>Photography</p>
       </div>
-      <div class="illustrations">
+      <div class="illustrations skill-container">
         <img src="./assets/pattern-illustrations.svg" alt="">
         <p>Illustrations</p>
       </div>
-      <div class="motion-graphics">
+      <div class="motion-graphics skill-container">
         <img src="./assets/pattern-motion-graphics.svg" alt="">
         <p>Motion Graphics</p>
       </div>
@@ -132,8 +132,36 @@
     <a href="index.html" class="consultation-link">Free Consultation</a>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/gsap.min.js"></script>
+  <script src="/js/ScrollTrigger.min.js"></script>
 
+  <script>
+
+    gsap.registerPlugin(ScrollTrigger);
+
+
+    document.querySelectorAll(".skill-container").forEach(skill => {
+      gsap.from(skill, {
+        opacity: 0,
+        y: 100,
+        duration: 1.6,
+        stagger: 0.6,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: skill,
+          start: "top 80%"
+        }
+      });
+    });
+
+
+
+
+
+
+
+  </script>
 </body>
 
 </html>
